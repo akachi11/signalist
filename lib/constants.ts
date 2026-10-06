@@ -337,3 +337,21 @@ export const WATCHLIST_TABLE_HEADER = [
     'Alert',
     'Action',
 ];
+
+// AI Chat widget — backed live by the StockSage RAG backend
+export type AIChatRole = 'user' | 'assistant' | 'system';
+
+export interface AIChatMessage {
+    id: string;
+    role: AIChatRole;
+    content: string;
+    sources?: string[];
+    grounded?: boolean;
+}
+
+export const AI_CHAT_SUGGESTED_PROMPTS: string[] = [
+    'What makes a stock low risk?',
+    'How do I evaluate a tech stock?',
+    'What does market cap tell you?',
+    'What is a diversified portfolio?',
+];
