@@ -2,6 +2,9 @@
   "name": "signalist",
   "version": "0.1.0",
   "private": true,
+  "description": "A stock-tracking dashboard with an AI chat assistant that researches any stock live and answers questions grounded in that real-time data.",
+  "author": "akachi11",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
